@@ -1,3 +1,6 @@
+Create a free portfolio website to display all of your projects in a single place.
+
+Source for free web template is below:
 Massively by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
