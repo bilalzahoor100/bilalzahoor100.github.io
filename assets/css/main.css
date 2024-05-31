@@ -74,6 +74,9 @@ input, select, textarea {
 
 /* Basic */
 
+skills-container{
+margin-left: 20px !important;
+}
 	@-ms-viewport {
 		width: device-width;
 	}
