@@ -115,6 +115,11 @@ input, select, textarea {
 
 /* Type */
 
+
+.skills-section{
+margin-left:20px !important;
+}
+
 	html {
 		font-size: 16pt;
 	}
