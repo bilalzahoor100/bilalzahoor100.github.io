@@ -3602,6 +3602,47 @@ input, select, textarea {
 				}
 
 		}
+		/* skills */
+
+			body {
+		    background-color: #121212;
+		    color: #fff;
+		    font-family: Arial, sans-serif;
+		    margin: 0;
+		    padding: 0;
+		}
+		
+		.skills-section {
+		    text-align: center;
+		    padding: 50px 0;
+		}
+		
+		.skills-section h2 {
+		    margin-bottom: 20px;
+		}
+		
+		.skills-container {
+		    display: grid;
+		    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		    gap: 15px;
+		    justify-items: center;
+		}
+		
+		.skill {
+		    background-color: #1c1c1c;
+		    padding: 10px 20px;
+		    border-radius: 5px;
+		    display: flex;
+		    align-items: center;
+		    gap: 8px;
+		    font-weight: bold;
+		}
+		
+		.skill .icon {
+		    display: inline-block;
+		    font-size: 20px;
+		}
+/* skills */
 
 /* Nav */
 
