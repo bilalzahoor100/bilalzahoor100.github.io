@@ -9,7 +9,7 @@
 <body class="bg-gray-950 text-white font-sans">
 
   <!-- Navbar -->
-  <nav class="flex justify-between items-center p-6 bg-gray-900 sticky top-0">
+  <nav class="flex justify-between items-center p-6 bg-gray-900 sticky top-0 z-50">
     <h1 class="text-xl font-bold">Bilal Zahoor</h1>
     <div class="space-x-6">
       <a href="#about" class="hover:text-blue-400">About</a>
@@ -20,36 +20,53 @@
   </nav>
 
   <!-- Hero -->
-  <section class="h-screen flex flex-col justify-center items-center text-center">
-    <h2 class="text-5xl font-bold mb-4">Data Engineer</h2>
-    <p class="text-gray-400 max-w-xl">Building scalable data pipelines, cloud solutions, and analytics systems that drive business decisions.</p>
+  <section class="h-screen flex flex-col justify-center items-center text-center px-4">
+    <h2 class="text-5xl font-bold mb-4">Data Engineer | Azure | SQL | ETL</h2>
+    <p class="text-gray-400 max-w-xl">Building scalable data pipelines and analytics systems that drive business decisions.</p>
     <a href="#projects" class="mt-6 px-6 py-3 bg-blue-600 rounded-xl hover:bg-blue-700">View My Work</a>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="p-10 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold mb-4">About Me</h2>
-    <p class="text-gray-400">I am a Data Engineer with experience in Azure, SQL, and building ETL pipelines across healthcare and business domains.</p>
   </section>
 
   <!-- Projects -->
   <section id="projects" class="p-10">
     <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
+
     <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-gray-900 p-5 rounded-2xl hover:scale-105 transition">
-        <h3 class="text-xl font-semibold">Healthcare Pipeline</h3>
-        <p class="text-gray-400 mt-2">End-to-end ETL pipeline using Azure & SQL.</p>
+
+      <!-- Project Card -->
+      <div onclick="openModal('project1')" class="cursor-pointer bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition">
+        <img src="https://via.placeholder.com/400x250" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Healthcare Data Pipeline</h3>
+          <p class="text-gray-400 text-sm mt-2">Azure ETL pipeline processing large datasets</p>
+        </div>
       </div>
-      <div class="bg-gray-900 p-5 rounded-2xl hover:scale-105 transition">
-        <h3 class="text-xl font-semibold">Power BI Dashboard</h3>
-        <p class="text-gray-400 mt-2">Interactive dashboards for business insights.</p>
+
+      <div onclick="openModal('project2')" class="cursor-pointer bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition">
+        <img src="https://via.placeholder.com/400x250" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Power BI Dashboard</h3>
+          <p class="text-gray-400 text-sm mt-2">Interactive business insights dashboard</p>
+        </div>
       </div>
-      <div class="bg-gray-900 p-5 rounded-2xl hover:scale-105 transition">
-        <h3 class="text-xl font-semibold">SQL Optimization</h3>
-        <p class="text-gray-400 mt-2">Improved query performance & indexing.</p>
+
+      <div onclick="openModal('project3')" class="cursor-pointer bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition">
+        <img src="https://via.placeholder.com/400x250" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">SQL Optimization</h3>
+          <p class="text-gray-400 text-sm mt-2">Improved query performance</p>
+        </div>
       </div>
+
     </div>
   </section>
+
+  <!-- Modal -->
+  <div id="modal" class="fixed inset-0 bg-black bg-opacity-70 hidden justify-center items-center z-50">
+    <div class="bg-gray-900 p-6 rounded-2xl max-w-lg w-full relative">
+      <button onclick="closeModal()" class="absolute top-2 right-3 text-xl">&times;</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
 
   <!-- Skills -->
   <section id="skills" class="p-10 max-w-4xl mx-auto">
@@ -65,8 +82,62 @@
   <!-- Contact -->
   <section id="contact" class="p-10 text-center">
     <h2 class="text-3xl font-bold mb-4">Contact</h2>
-    <p class="text-gray-400">bilal@email.com</p>
+    <p class="text-gray-400">bilalzahoor100@email.com</p>
   </section>
+
+  <!-- JavaScript -->
+  <script>
+    function openModal(project) {
+      const modal = document.getElementById('modal');
+      const content = document.getElementById('modal-content');
+
+      if (project === 'project1') {
+        content.innerHTML = `
+          <h2 class="text-2xl font-bold mb-2">Healthcare Data Pipeline</h2>
+          <p class="text-gray-400 mb-3">Built an end-to-end ETL pipeline using Azure Data Factory and SQL.</p>
+          <ul class="text-gray-400 list-disc ml-5 space-y-1">
+            <li>Processed 1M+ healthcare records</li>
+            <li>Improved processing time by 35%</li>
+            <li>Integrated with Power BI for reporting</li>
+          </ul>
+          <a href="#" target="_blank" class="inline-block mt-4 text-blue-400">View Project</a>
+        `;
+      }
+
+      if (project === 'project2') {
+        content.innerHTML = `
+          <h2 class="text-2xl font-bold mb-2">Power BI Dashboard</h2>
+          <p class="text-gray-400 mb-3">Created interactive dashboards for business analytics.</p>
+          <ul class="text-gray-400 list-disc ml-5 space-y-1">
+            <li>Designed KPIs and visual reports</li>
+            <li>Used real-time data integration</li>
+          </ul>
+          <a href="#" target="_blank" class="inline-block mt-4 text-blue-400">View Project</a>
+        `;
+      }
+
+      if (project === 'project3') {
+        content.innerHTML = `
+          <h2 class="text-2xl font-bold mb-2">SQL Optimization</h2>
+          <p class="text-gray-400 mb-3">Optimized queries and indexing for better performance.</p>
+          <ul class="text-gray-400 list-disc ml-5 space-y-1">
+            <li>Reduced query time by 40%</li>
+            <li>Implemented indexing strategies</li>
+          </ul>
+          <a href="#" target="_blank" class="inline-block mt-4 text-blue-400">View Project</a>
+        `;
+      }
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  </script>
 
 </body>
 </html>
