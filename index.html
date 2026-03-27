@@ -34,22 +34,30 @@
 
       <!-- Project Card -->
       <div onclick="openModal('project1')" class="cursor-pointer bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition">
-        <img src="https://via.placeholder.com/400x250" class="w-full h-48 object-cover">
+        <img src="images/etl-pipeline.png" class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-semibold">Healthcare Data Pipeline</h3>
-          <p class="text-gray-400 text-sm mt-2">Azure ETL pipeline processing large datasets</p>
+          <p class="text-gray-400 text-sm mt-2">Talend ETL pipeline processing large datasets</p>
         </div>
       </div>
 
       <div onclick="openModal('project2')" class="cursor-pointer bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition">
-        <img src="https://via.placeholder.com/400x250" class="w-full h-48 object-cover">
+        <img src="images/powerbi.jpg" class="w-full h-48 object-cover">
         <div class="p-4">
-          <h3 class="text-xl font-semibold">Power BI Dashboard</h3>
-          <p class="text-gray-400 text-sm mt-2">Interactive business insights dashboard</p>
+          <h3 class="text-xl font-semibold">Power BI Dashboards</h3>
+          <p class="text-gray-400 text-sm mt-2">Interactive business insights dashboards</p>
         </div>
       </div>
 
       <div onclick="openModal('project3')" class="cursor-pointer bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition">
+        <img src="images/tableau.png" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Tableau Dashboards</h3>
+          <p class="text-gray-400 text-sm mt-2">Interactive business insights dashboards</p>
+        </div>
+      </div>
+
+      <div onclick="openModal('project4')" class="cursor-pointer bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition">
         <img src="https://via.placeholder.com/400x250" class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-semibold">SQL Optimization</h3>
@@ -94,7 +102,7 @@
       if (project === 'project1') {
         content.innerHTML = `
           <h2 class="text-2xl font-bold mb-2">Healthcare Data Pipeline</h2>
-          <p class="text-gray-400 mb-3">Built an end-to-end ETL pipeline using Azure Data Factory and SQL.</p>
+          <p class="text-gray-400 mb-3">Built an end-to-end ETL pipeline using Talend Open Studio and SQL.</p>
           <ul class="text-gray-400 list-disc ml-5 space-y-1">
             <li>Processed 1M+ healthcare records</li>
             <li>Improved processing time by 35%</li>
@@ -117,6 +125,19 @@
       }
 
       if (project === 'project3') {
+        content.innerHTML = `
+          <h2 class="text-2xl font-bold mb-2">Power BI Dashboard</h2>
+          <p class="text-gray-400 mb-3">Created interactive dashboards for business analytics.</p>
+          <ul class="text-gray-400 list-disc ml-5 space-y-1">
+            <li>Designed KPIs and visual reports</li>
+            <li>Used real-time data integration</li>
+          </ul>
+          <a href="https://1drv.ms/p/c/8a975ea2576be5a6/EXC3Y2ZDz2ZFjhpq7drCQwsBN9J08OJcG3kgIzV-1KSoEw?e=jszVPY" target="_blank" class="inline-block mt-4 text-blue-400">Patient Demographics - View Project</a>
+          <a href="https://1drv.ms/p/c/8a975ea2576be5a6/ETgPkQ2HiTlAk-IcqiKRapMBVRlv5dzMeJTpH3XEyUw2ug?e=N5Bup8" target="_blank" class="inline-block mt-4 text-blue-400">Data Professional Survey - View Project</a>
+        `;
+      }
+
+      if (project === 'project4') {
         content.innerHTML = `
           <h2 class="text-2xl font-bold mb-2">SQL Optimization</h2>
           <p class="text-gray-400 mb-3">Optimized queries and indexing for better performance.</p>
