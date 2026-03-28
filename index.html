@@ -136,6 +136,9 @@
 
   <!-- JavaScript -->
   <script>
+          if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+      }
     function openModal(project) {
       const modal = document.getElementById('modal');
       const content = document.getElementById('modal-content');
@@ -212,7 +215,7 @@
       }
     }
     
-          window.addEventListener("load", function () {
+             window.addEventListener("load", function () {
         window.scrollTo(0, 0);
         typeEffect();
       });
