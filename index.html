@@ -20,11 +20,29 @@
   </nav>
 
   <!-- Hero -->
-  <section class="h-screen flex flex-col justify-center items-center text-center px-4">
-    <h2 class="text-5xl font-bold mb-4">Data Engineer | Azure | SQL | ETL</h2>
-    <p class="text-gray-400 max-w-xl">Building scalable data pipelines and analytics systems that drive business decisions.</p>
-    <a href="#projects" class="mt-6 px-6 py-3 bg-blue-600 rounded-xl hover:bg-blue-700">View My Work</a>
-  </section>
+  <!-- Premium Hero Section -->
+<section class="relative h-screen flex flex-col justify-center items-center text-center px-4 overflow-hidden">
+  
+  <!-- Background Gradient -->
+  <div class="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-blue-900"></div>
+
+  <!-- Animated Glow -->
+  <div class="absolute w-[500px] h-[500px] bg-blue-500 opacity-20 blur-3xl rounded-full animate-pulse"></div>
+
+  <!-- Content -->
+  <div class="relative z-10">
+    <h2 class="text-5xl font-bold mb-4">
+      <span id="typing"></span>
+    </h2>
+    <p class="text-gray-300 max-w-xl mx-auto">
+      Building scalable data pipelines and analytics systems that drive business decisions.
+    </p>
+    <a href="#projects" class="mt-6 inline-block px-6 py-3 bg-blue-600 rounded-xl hover:bg-blue-700 transition">
+      View My Work
+    </a>
+  </div>
+
+</section>
 
   <!-- Projects -->
   <section id="projects" class="p-10">
@@ -181,6 +199,21 @@
       modal.classList.add('hidden');
       modal.classList.remove('flex');
     }
+
+        // Typing Animation
+    const text = "Data Engineer | Azure | SQL | ETL";
+    let index = 0;
+    
+    function typeEffect() {
+      if (index < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 60);
+      }
+    }
+    
+    // Use this instead of window.onload (safer with your modal code)
+    window.addEventListener("load", typeEffect);
   </script>
 
 </body>
