@@ -215,10 +215,14 @@
       }
     }
     
-             window.addEventListener("load", function () {
-        window.scrollTo(0, 0);
-        typeEffect();
-      });
+                 window.addEventListener("load", function () {
+          typeEffect();
+        
+          // Force scroll to top AFTER render
+          setTimeout(() => {
+            window.scrollTo(0, 0);
+          }, 0);
+        });
   </script>
 
 </body>
