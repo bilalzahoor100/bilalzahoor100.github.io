@@ -212,8 +212,10 @@
       }
     }
     
-    // Use this instead of window.onload (safer with your modal code)
-    window.addEventListener("load", typeEffect);
+          window.addEventListener("load", function () {
+        window.scrollTo(0, 0);
+        typeEffect();
+      });
   </script>
 
 </body>
