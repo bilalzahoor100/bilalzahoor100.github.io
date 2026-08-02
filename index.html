@@ -1,276 +1,770 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bilal Zahoor | Data Engineer</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-950 text-white font-sans">
+
 
   <!-- Navbar -->
   <nav class="flex justify-between items-center p-6 bg-gray-900 sticky top-0 z-50">
-    <h1 class="text-xl font-bold">Bilal Zahoor</h1>
+
+    <h1 class="text-xl font-bold">
+      Bilal Zahoor
+    </h1>
+
     <div class="space-x-6">
-      <a href="#about" class="hover:text-blue-400">About</a>
-      <a href="#projects" class="hover:text-blue-400">Projects</a>
-      <a href="#skills" class="hover:text-blue-400">Skills</a>
-      <a href="#contact" class="hover:text-blue-400">Contact</a>
+
+      <a href="#about" class="hover:text-blue-400">
+        About
+      </a>
+
+      <a href="#projects" class="hover:text-blue-400">
+        Projects
+      </a>
+
+      <a href="#skills" class="hover:text-blue-400">
+        Skills
+      </a>
+
+      <a href="#contact" class="hover:text-blue-400">
+        Contact
+      </a>
+
     </div>
+
   </nav>
 
-  <!-- Hero -->
+
+
   <!-- Premium Hero Section -->
-<section class="relative h-screen flex flex-col justify-center items-center text-center px-4 overflow-hidden">
-  
-  <!-- Background Gradient -->
-  <div class="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-blue-900"></div>
 
-  <!-- Animated Glow -->
-  <div class="absolute w-[500px] h-[500px] bg-blue-500 opacity-20 blur-3xl rounded-full animate-pulse"></div>
+  <section class="relative h-screen flex flex-col justify-center items-center text-center px-4 overflow-hidden">
 
-  <!-- Content -->
-  <div class="relative z-10">
-    <h2 class="text-5xl font-bold mb-4">
-      <span id="typing"></span>
-    </h2>
-    <p class="text-xl text-blue-400 font-semibold mb-4">
-  Azure | SQL | Python | ETL | Power BI | Tableau | Snowflake
-    </p>
-    <p class="text-gray-300 max-w-xl mx-auto">
-      Building scalable data pipelines and analytics systems that drive business decisions.
-    </p>
-    <a href="#projects" class="mt-6 inline-block px-6 py-3 bg-blue-600 rounded-xl hover:bg-blue-700 transition">
-      View My Work
-    </a>
-  </div>
 
-</section>
+    <!-- Background Gradient -->
+    <div class="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-blue-900">
+    </div>
 
-  <!-- Projects -->
+
+    <!-- Animated Glow -->
+    <div class="absolute w-[500px] h-[500px] bg-blue-500 opacity-20 blur-3xl rounded-full animate-pulse">
+    </div>
+
+
+
+    <!-- Hero Content -->
+
+    <div class="relative z-10">
+
+
+      <!-- Animated Job Titles -->
+
+      <h2 class="text-5xl font-bold mb-4">
+
+        <span id="typing"></span>
+
+      </h2>
+
+
+
+      <!-- Technical Stack -->
+
+      <p class="text-xl text-blue-400 font-semibold mb-4">
+
+        Azure | SQL | Python | ETL | Power BI | Tableau | Snowflake
+
+      </p>
+
+
+
+      <!-- Description -->
+
+      <p class="text-gray-300 max-w-xl mx-auto">
+
+        Building scalable data pipelines, analytics solutions, and data-driven insights that support business decisions.
+
+      </p>
+
+
+
+      <!-- Button -->
+
+      <a href="#projects"
+        class="mt-6 inline-block px-6 py-3 bg-blue-600 rounded-xl hover:bg-blue-700 transition">
+
+        View My Work
+
+      </a>
+
+
+    </div>
+
+
+  </section>
+
+    <!-- Projects -->
   <section id="projects" class="p-10">
-    <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
+
+    <h2 class="text-3xl font-bold mb-8 text-center">
+      Projects
+    </h2>
+
 
     <div class="grid md:grid-cols-3 gap-6">
 
-      <!-- Project Card -->
-      <div onclick="openModal('project1')" class="cursor-pointer bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition">
-        <img src="images/etl-pipeline.png" class="w-full h-48 object-cover">
+
+      <!-- Project 1 -->
+
+      <div onclick="openModal('project1')" 
+           class="cursor-pointer bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition">
+
+        <img src="images/etl-pipeline.png"
+             class="w-full h-48 object-cover">
+
         <div class="p-4">
-          <h3 class="text-xl font-semibold">Healthcare Data Pipeline</h3>
-          <p class="text-gray-400 text-sm mt-2">Talend ETL pipeline processing large datasets</p>
+
+          <h3 class="text-xl font-semibold">
+            Healthcare Data Pipeline
+          </h3>
+
+          <p class="text-gray-400 text-sm mt-2">
+            Talend ETL pipeline processing large healthcare datasets
+          </p>
+
         </div>
+
       </div>
 
-      <div onclick="openModal('project2')" class="cursor-pointer bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition">
-        <img src="images/powerbi.jpg" class="w-full h-48 object-cover">
+
+
+      <!-- Project 2 -->
+
+      <div onclick="openModal('project2')" 
+           class="cursor-pointer bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition">
+
+        <img src="images/powerbi.jpg"
+             class="w-full h-48 object-cover">
+
         <div class="p-4">
-          <h3 class="text-xl font-semibold">Power BI Dashboards</h3>
-          <p class="text-gray-400 text-sm mt-2">Interactive business insights dashboards</p>
+
+          <h3 class="text-xl font-semibold">
+            Power BI Dashboards
+          </h3>
+
+          <p class="text-gray-400 text-sm mt-2">
+            Interactive business intelligence dashboards
+          </p>
+
         </div>
+
       </div>
 
-      <div onclick="openModal('project3')" class="cursor-pointer bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition">
-        <img src="images/tableau-sample.jpg" class="w-full h-48 object-cover">
+
+
+      <!-- Project 3 -->
+
+      <div onclick="openModal('project3')" 
+           class="cursor-pointer bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition">
+
+        <img src="images/tableau-sample.jpg"
+             class="w-full h-48 object-cover">
+
         <div class="p-4">
-          <h3 class="text-xl font-semibold">Tableau Dashboards</h3>
-          <p class="text-gray-400 text-sm mt-2">Interactive business insights dashboards</p>
+
+          <h3 class="text-xl font-semibold">
+            Tableau Dashboards
+          </h3>
+
+          <p class="text-gray-400 text-sm mt-2">
+            Data visualisation projects across different datasets
+          </p>
+
         </div>
+
       </div>
 
-      <div onclick="openModal('project4')" class="cursor-pointer bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition">
-        <img src="images/nhs-web-app-2.jpeg" class="w-full h-48 object-cover">
+
+
+      <!-- Project 4 -->
+
+      <div onclick="openModal('project4')" 
+           class="cursor-pointer bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition">
+
+        <img src="images/nhs-web-app-2.jpeg"
+             class="w-full h-48 object-cover">
+
         <div class="p-4">
-          <h3 class="text-xl font-semibold">Web-Based NHS Waiting List Analytics</h3>
-          <p class="text-gray-400 text-sm mt-2">NHS Data Pipeline & Analytics</p>
+
+          <h3 class="text-xl font-semibold">
+            Web-Based NHS Waiting List Analytics
+          </h3>
+
+          <p class="text-gray-400 text-sm mt-2">
+            NHS Data Pipeline & Analytics Platform
+          </p>
+
         </div>
+
       </div>
+
 
     </div>
+
   </section>
+
+
+
 
   <!-- Modal -->
-  <div id="modal" class="fixed inset-0 bg-black bg-opacity-70 hidden justify-center items-center z-50">
+
+  <div id="modal"
+       class="fixed inset-0 bg-black bg-opacity-70 hidden justify-center items-center z-50">
+
+
     <div class="bg-gray-900 p-6 rounded-2xl max-w-lg w-full relative">
-      <button onclick="closeModal()" class="absolute top-2 right-3 text-xl">&times;</button>
+
+
+      <button onclick="closeModal()"
+              class="absolute top-2 right-3 text-xl">
+
+        &times;
+
+      </button>
+
+
       <div id="modal-content"></div>
+
+
     </div>
+
+
   </div>
 
+
+
+
+
   <!-- Skills -->
+
   <section id="skills" class="p-10 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold mb-6 text-center">Skills</h2>
-    <div class="flex flex-wrap gap-4">
-      <span class="bg-blue-600 px-4 py-2 rounded-xl">SQL</span>
-      <span class="bg-blue-600 px-4 py-2 rounded-xl">Azure</span>
-      <span class="bg-blue-600 px-4 py-2 rounded-xl">Talend Studio</span>
-      <span class="bg-blue-600 px-4 py-2 rounded-xl">ETL</span>
-      <span class="bg-blue-600 px-4 py-2 rounded-xl">Python</span>
-      <span class="bg-blue-600 px-4 py-2 rounded-xl">Power BI</span>
-      <span class="bg-blue-600 px-4 py-2 rounded-xl">Tableau</span>
-      <span class="bg-blue-600 px-4 py-2 rounded-xl">Data Visualization</span>
-      <span class="bg-blue-600 px-4 py-2 rounded-xl">Snowflake</span>
+
+
+    <h2 class="text-3xl font-bold mb-6 text-center">
+      Skills
+    </h2>
+
+
+    <div class="flex flex-wrap gap-4 justify-center">
+
+
+      <span class="bg-blue-600 px-4 py-2 rounded-xl">
+        SQL
+      </span>
+
+
+      <span class="bg-blue-600 px-4 py-2 rounded-xl">
+        Azure
+      </span>
+
+
+      <span class="bg-blue-600 px-4 py-2 rounded-xl">
+        Talend Studio
+      </span>
+
+
+      <span class="bg-blue-600 px-4 py-2 rounded-xl">
+        ETL
+      </span>
+
+
+      <span class="bg-blue-600 px-4 py-2 rounded-xl">
+        Python
+      </span>
+
+
+      <span class="bg-blue-600 px-4 py-2 rounded-xl">
+        Power BI
+      </span>
+
+
+      <span class="bg-blue-600 px-4 py-2 rounded-xl">
+        Tableau
+      </span>
+
+
+      <span class="bg-blue-600 px-4 py-2 rounded-xl">
+        Data Visualization
+      </span>
+
+
+      <span class="bg-blue-600 px-4 py-2 rounded-xl">
+        Snowflake
+      </span>
+
+
     </div>
+
+
   </section>
 
+
+
+
+
   <!-- Contact -->
- <section id="contact" class="p-10 text-center">
-    <h2 class="text-3xl font-bold mb-4">Contact</h2>
+
+
+  <section id="contact" class="p-10 text-center">
+
+
+    <h2 class="text-3xl font-bold mb-4">
+      Contact
+    </h2>
+
+
+
     <div class="flex justify-center items-center gap-6 mt-4">
-      
+
+
       <!-- Email -->
-      <a href="mailto:bilalzahoor100@gmail.com" class="flex items-center gap-2 text-gray-400 hover:text-blue-400">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l9 6 9-6M5 6h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2z" />
+
+      <a href="mailto:bilalzahoor100@gmail.com"
+         class="flex items-center gap-2 text-gray-400 hover:text-blue-400">
+
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+             class="w-6 h-6"
+             fill="none"
+             viewBox="0 0 24 24"
+             stroke="currentColor">
+
+
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 8l9 6 9-6M5 6h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2z"/>
+
+
         </svg>
-        <span>Email</span>
+
+
+        <span>
+          Email
+        </span>
+
+
       </a>
+
+
+
 
       <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/bilal-zahoor-data-engineer/" target="_blank" class="flex items-center gap-2 text-gray-400 hover:text-blue-400">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+
+      <a href="https://www.linkedin.com/in/bilal-zahoor-data-engineer/"
+         target="_blank"
+         class="flex items-center gap-2 text-gray-400 hover:text-blue-400">
+
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+             class="w-6 h-6"
+             fill="currentColor"
+             viewBox="0 0 24 24">
+
+
           <path d="M20.447 20.452H17.21v-5.569c0-1.327-.025-3.036-1.849-3.036-1.849 0-2.131 1.445-2.131 2.939v5.666H9.093V9h3.112v1.561h.044c.434-.822 1.494-1.689 3.073-1.689 3.287 0 3.893 2.164 3.893 4.977v6.603zM5.337 7.433a1.804 1.804 0 110-3.609 1.804 1.804 0 010 3.609zM6.819 20.452H3.855V9h2.964v11.452z"/>
+
+
         </svg>
-        <span>LinkedIn</span>
+
+
+        <span>
+          LinkedIn
+        </span>
+
+
       </a>
 
+
     </div>
+
+
   </section>
 
   <!-- JavaScript -->
-  <script>
-          if ('scrollRestoration' in history) {
-        history.scrollRestoration = 'manual';
-      }
-    function openModal(project) {
-      const modal = document.getElementById('modal');
-      const content = document.getElementById('modal-content');
 
-      if (project === 'project1') {
-        content.innerHTML = `
-          <h2 class="text-2xl font-bold mb-2">Healthcare Data Pipeline</h2>
-          <p class="text-gray-400 mb-3">Built an end-to-end ETL pipeline using Talend Open Studio and SQL.</p>
-          <ul class="text-gray-400 list-disc ml-5 space-y-1">
-            <li>Processed 1M+ healthcare records</li>
-            <li>Improved processing time by 35%</li>
-            <li>Integrated with Power BI for reporting</li>
-          </ul>
-          <!-- <a href="#" target="_blank" class="inline-block mt-4 text-blue-400">View Project</a> -->
-        `;
-      }
+<script>
 
-      if (project === 'project2') {
-        content.innerHTML = `
-          <h2 class="text-2xl font-bold mb-2">Power BI Dashboards</h2>
-          <p class="text-gray-400 mb-3">Created interactive dashboards for business analytics.</p>
-          <ul class="text-gray-400 list-disc ml-5 space-y-1">
-            <li>Designed KPIs and visual reports</li>
-            <li>Used real-time data integration</li>
-          </ul>
-          <a href="https://1drv.ms/p/c/8a975ea2576be5a6/EXC3Y2ZDz2ZFjhpq7drCQwsBN9J08OJcG3kgIzV-1KSoEw?e=jszVPY" target="_blank" class="inline-block mt-4 text-blue-400">Patient Demographics - View Project</a>
-          <a href="https://1drv.ms/p/c/8a975ea2576be5a6/ETgPkQ2HiTlAk-IcqiKRapMBVRlv5dzMeJTpH3XEyUw2ug?e=N5Bup8" target="_blank" class="inline-block mt-4 text-blue-400">Data Professional Survey - View Project</a>
-        `;
-      }
 
-      if (project === 'project3') {
-        content.innerHTML = `
-          <h2 class="text-2xl font-bold mb-2">Tableau Dashboards</h2>
-          <p class="text-gray-400 mb-3">A collection of Tableau dashboards built across different domains and datasets.</p>
-          <ul class="text-gray-400 list-disc ml-5 space-y-1">
-            <li>Each project focuses on clarity and interactivity</li>
-            <li>Taking data from its raw form and crafting visuals that highlight the right insights at the right time.</li>
-          </ul>
-          <a href="https://public.tableau.com/app/profile/bilal6800" target="_blank" class="inline-block mt-4 text-blue-400">View Project</a>
-        `;
-      }
+// ================================
+// Prevent browser restoring scroll
+// ================================
 
-      if (project === 'project4') {
-        content.innerHTML = `
-          <h2 class="text-2xl font-bold mb-2">Web-Based NHS Waiting List Analytics</h2>
-          <p class="text-gray-400 mb-3">Analysed NHS data to identify key issues like waiting lists and missed appointments</p>
-          <ul class="text-gray-400 list-disc ml-5 space-y-1">
-            <li>Implemented a data engineering solution using Python to collect, clean, and combine data</li>
-            <li>Created a structured dataset for trend analysis and dashboards</li>
-          </ul>
-          <!-- <a href="#" target="_blank" class="inline-block mt-4 text-blue-400">View Project</a> -->
-        `;
-      }
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
 
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
+
+
+
+
+// ================================
+// Project Modal
+// ================================
+
+
+function openModal(project) {
+
+  const modal = document.getElementById('modal');
+  const content = document.getElementById('modal-content');
+
+
+
+  if (project === 'project1') {
+
+    content.innerHTML = `
+
+      <h2 class="text-2xl font-bold mb-2">
+        Healthcare Data Pipeline
+      </h2>
+
+      <p class="text-gray-400 mb-3">
+        Built an end-to-end ETL pipeline using Talend Open Studio and SQL.
+      </p>
+
+
+      <ul class="text-gray-400 list-disc ml-5 space-y-1">
+
+        <li>
+          Processed 1M+ healthcare records
+        </li>
+
+        <li>
+          Improved processing time by 35%
+        </li>
+
+        <li>
+          Integrated with Power BI for reporting
+        </li>
+
+      </ul>
+
+    `;
+
+  }
+
+
+
+  if (project === 'project2') {
+
+    content.innerHTML = `
+
+      <h2 class="text-2xl font-bold mb-2">
+        Power BI Dashboards
+      </h2>
+
+
+      <p class="text-gray-400 mb-3">
+        Created interactive dashboards for business analytics.
+      </p>
+
+
+      <ul class="text-gray-400 list-disc ml-5 space-y-1">
+
+        <li>
+          Designed KPIs and visual reports
+        </li>
+
+        <li>
+          Used real-time data integration
+        </li>
+
+      </ul>
+
+
+      <a href="https://1drv.ms/p/c/8a975ea2576be5a6/EXC3Y2ZDz2ZFjhpq7drCQwsBN9J08OJcG3kgIzV-1KSoEw?e=jszVPY"
+         target="_blank"
+         class="inline-block mt-4 text-blue-400">
+
+        Patient Demographics - View Project
+
+      </a>
+
+
+      <br>
+
+
+      <a href="https://1drv.ms/p/c/8a975ea2576be5a6/ETgPkQ2HiTlAk-IcqiKRapMBVRlv5dzMeJTpH3XEyUw2ug?e=N5Bup8"
+         target="_blank"
+         class="inline-block mt-4 text-blue-400">
+
+        Data Professional Survey - View Project
+
+      </a>
+
+    `;
+
+  }
+
+
+
+
+
+  if (project === 'project3') {
+
+    content.innerHTML = `
+
+
+      <h2 class="text-2xl font-bold mb-2">
+        Tableau Dashboards
+      </h2>
+
+
+      <p class="text-gray-400 mb-3">
+        A collection of Tableau dashboards built across different domains and datasets.
+      </p>
+
+
+      <ul class="text-gray-400 list-disc ml-5 space-y-1">
+
+        <li>
+          Focused on clarity and interactivity
+        </li>
+
+
+        <li>
+          Converted raw data into meaningful insights
+        </li>
+
+      </ul>
+
+
+      <a href="https://public.tableau.com/app/profile/bilal6800"
+         target="_blank"
+         class="inline-block mt-4 text-blue-400">
+
+        View Project
+
+      </a>
+
+
+    `;
+
+  }
+
+
+
+
+
+  if (project === 'project4') {
+
+    content.innerHTML = `
+
+
+      <h2 class="text-2xl font-bold mb-2">
+        Web-Based NHS Waiting List Analytics
+      </h2>
+
+
+      <p class="text-gray-400 mb-3">
+        Analysed NHS data to identify key issues like waiting lists and missed appointments.
+      </p>
+
+
+      <ul class="text-gray-400 list-disc ml-5 space-y-1">
+
+
+        <li>
+          Built Python data pipelines to collect, clean and combine datasets
+        </li>
+
+
+        <li>
+          Created structured datasets for analytics and dashboards
+        </li>
+
+
+      </ul>
+
+
+    `;
+
+  }
+
+
+
+  modal.classList.remove('hidden');
+  modal.classList.add('flex');
+
+
+}
+
+
+
+
+
+function closeModal() {
+
+  const modal = document.getElementById('modal');
+
+  modal.classList.add('hidden');
+  modal.classList.remove('flex');
+
+}
+
+
+
+
+
+
+
+// ================================
+// Typing Animation
+// ================================
+
+
+const titles = [
+
+  "Data Engineer",
+
+  "Data Analyst",
+
+  "Business Analyst"
+
+];
+
+
+let titleIndex = 0;
+
+let charIndex = 0;
+
+let deleting = false;
+
+
+
+
+
+function typeEffect() {
+
+
+  const typingElement = document.getElementById("typing");
+
+
+  if (!typingElement) return;
+
+
+
+  const currentTitle = titles[titleIndex];
+
+
+
+  if (!deleting) {
+
+
+    typingElement.innerHTML =
+      currentTitle.substring(0, charIndex);
+
+
+    charIndex++;
+
+
+
+    if (charIndex > currentTitle.length) {
+
+
+      deleting = true;
+
+
+      setTimeout(typeEffect, 1500);
+
+
+      return;
+
     }
 
-    function closeModal() {
-      const modal = document.getElementById('modal');
-      modal.classList.add('hidden');
-      modal.classList.remove('flex');
+
+  } else {
+
+
+
+    typingElement.innerHTML =
+      currentTitle.substring(0, charIndex);
+
+
+
+    charIndex--;
+
+
+
+    if (charIndex < 0) {
+
+
+      deleting = false;
+
+
+      charIndex = 0;
+
+
+      titleIndex++;
+
+
+
+      if (titleIndex >= titles.length) {
+
+
+        titleIndex = 0;
+
+
+      }
+
+
     }
 
-        // Typing Animation
-        const titles = [
-      "Data Engineer",
-      "Data Analyst",
-      "Business Analyst"
-    ];
-    
-    let titleIndex = 0;
-    let charIndex = 0;
-    let deleting = false;
-    
-    
-    function typeEffect() {
-    
-      const typingElement = document.getElementById("typing");
-      const currentTitle = titles[titleIndex];
-    
-    
-      if (!deleting) {
-    
-        typingElement.innerHTML = currentTitle.substring(0, charIndex + 1);
-        charIndex++;
-    
-        if (charIndex === currentTitle.length) {
-          deleting = true;
-          setTimeout(typeEffect, 1500);
-          return;
-        }
-    
-      } else {
-    
-        typingElement.innerHTML = currentTitle.substring(0, charIndex - 1);
-        charIndex--;
-    
-        if (charIndex === 0) {
-          deleting = false;
-          titleIndex++;
-    
-          if (titleIndex === titles.length) {
-            titleIndex = 0;
-          }
-        }
-      }
-    
-    
-      setTimeout(typeEffect, deleting ? 40 : 80);
-    }
-    
-    function typeEffect() {
-      if (index < text.length) {
-        document.getElementById("typing").innerHTML += text.charAt(index);
-        index++;
-        setTimeout(typeEffect, 80);
-      }
-    }
-    
-                 window.addEventListener("load", function () {
-          typeEffect();
-        
-          // Force scroll to top AFTER render
-          setTimeout(() => {
-            window.scrollTo(0, 0);
-          }, 0);
-        });
-  </script>
 
-</body>
-</html>
+  }
+
+
+
+  setTimeout(
+    typeEffect,
+    deleting ? 50 : 100
+  );
+
+
+}
+
+
+
+
+
+
+// ================================
+// Page Load
+// ================================
+
+
+window.addEventListener("load", function () {
+
+
+  typeEffect();
+
+
+
+  setTimeout(() => {
+
+    window.scrollTo(0,0);
+
+  }, 0);
+
+
+
+});
+
+
+
+</script>
