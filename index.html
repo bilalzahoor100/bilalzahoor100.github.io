@@ -34,6 +34,9 @@
     <h2 class="text-5xl font-bold mb-4">
       <span id="typing"></span>
     </h2>
+    <p class="text-xl text-blue-400 font-semibold mb-4">
+  Azure | SQL | Python | ETL | Power BI | Tableau | Snowflake
+    </p>
     <p class="text-gray-300 max-w-xl mx-auto">
       Building scalable data pipelines and analytics systems that drive business decisions.
     </p>
@@ -204,8 +207,52 @@
     }
 
         // Typing Animation
-    const text = "Data Engineer | Azure | SQL | ETL";
-    let index = 0;
+        const titles = [
+      "Data Engineer",
+      "Data Analyst",
+      "Business Analyst"
+    ];
+    
+    let titleIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+    
+    
+    function typeEffect() {
+    
+      const typingElement = document.getElementById("typing");
+      const currentTitle = titles[titleIndex];
+    
+    
+      if (!deleting) {
+    
+        typingElement.innerHTML = currentTitle.substring(0, charIndex + 1);
+        charIndex++;
+    
+        if (charIndex === currentTitle.length) {
+          deleting = true;
+          setTimeout(typeEffect, 1500);
+          return;
+        }
+    
+      } else {
+    
+        typingElement.innerHTML = currentTitle.substring(0, charIndex - 1);
+        charIndex--;
+    
+        if (charIndex === 0) {
+          deleting = false;
+          titleIndex++;
+    
+          if (titleIndex === titles.length) {
+            titleIndex = 0;
+          }
+        }
+      }
+    
+    
+      setTimeout(typeEffect, deleting ? 40 : 80);
+    }
     
     function typeEffect() {
       if (index < text.length) {
