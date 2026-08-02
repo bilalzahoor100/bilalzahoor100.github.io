@@ -119,6 +119,52 @@
     <div class="grid md:grid-cols-3 gap-6">
 
 
+      <!-- Project 4 -->
+
+      <div onclick="openModal('project4')" 
+           class="cursor-pointer bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition">
+
+        <img src="images/nhs-web-app-2.jpeg"
+             class="w-full h-48 object-cover">
+
+        <div class="p-4">
+
+          <h3 class="text-xl font-semibold">
+            Web-Based NHS Waiting List Analytics
+          </h3>
+
+          <p class="text-gray-400 text-sm mt-2">
+            NHS Data Pipeline & Analytics Platform
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Project 5 -->
+
+
+      <div onclick="openModal('project5')" 
+         class="cursor-pointer bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition">
+
+        <img src="images/top10_picturesque_routes.png"
+             class="w-full h-48 object-cover">
+
+        <div class="p-4">
+
+          <h3 class="text-xl font-semibold">
+            AllTrails Scotland Trail Analysis
+          </h3>
+
+          <p class="text-gray-400 text-sm mt-2">
+            Built an end-to-end analytics project to identify the most picturesque running routes in Scotland using Python, web scraping, and data visualisation.
+          </p>
+
+          </div>
+
+      </div>
+
+      
       <!-- Project 1 -->
 
       <div onclick="openModal('project1')" 
@@ -140,8 +186,7 @@
         </div>
 
       </div>
-
-
+      
 
       <!-- Project 2 -->
 
@@ -188,31 +233,6 @@
         </div>
 
       </div>
-
-
-
-      <!-- Project 4 -->
-
-      <div onclick="openModal('project4')" 
-           class="cursor-pointer bg-gray-900 rounded-2xl overflow-hidden hover:scale-105 transition">
-
-        <img src="images/nhs-web-app-2.jpeg"
-             class="w-full h-48 object-cover">
-
-        <div class="p-4">
-
-          <h3 class="text-xl font-semibold">
-            Web-Based NHS Waiting List Analytics
-          </h3>
-
-          <p class="text-gray-400 text-sm mt-2">
-            NHS Data Pipeline & Analytics Platform
-          </p>
-
-        </div>
-
-      </div>
-
 
     </div>
 
@@ -633,7 +653,47 @@ function openModal(project) {
 }
 
 
+if (project === 'project5') {
 
+  content.innerHTML = `
+
+    <h2 class="text-2xl font-bold mb-2">
+      AllTrails Scotland Trail Analysis
+    </h2>
+
+    <p class="text-gray-400 mb-3">
+      Developed an automated data analytics workflow to collect, clean, analyse, and visualise Scottish running trail data from AllTrails.
+    </p>
+
+
+    <ul class="text-gray-400 list-disc ml-5 space-y-1">
+
+      <li>
+        Automated data collection of 100+ trail routes using Python, Selenium, and BeautifulSoup
+      </li>
+
+      <li>
+        Cleaned and transformed trail data using Pandas to prepare analysis-ready datasets
+      </li>
+
+      <li>
+        Created a custom Picturesque Score combining ratings, reviews, elevation, and scenic keywords
+      </li>
+
+      <li>
+        Built interactive Plotly dashboards and visualisations to highlight top-rated scenic routes
+      </li>
+
+      <li>
+        Documented methodology, insights, limitations, and reproducible workflow
+      </li>
+
+    </ul>
+
+
+  `;
+
+}
 
 
 function closeModal() {
